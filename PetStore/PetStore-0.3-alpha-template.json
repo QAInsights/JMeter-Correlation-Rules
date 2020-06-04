@@ -1,0 +1,21 @@
+{
+  "id" : "PetStore",
+  "description" : "This correlation rules helps you to correlate Pet Store app. Created by NaveenKumar Namachivayam.",
+  "version" : "0.3-alpha",
+  "components" : "",
+  "responseFilters" : "",
+  "rules" : [ {
+    "referenceName" : "jsession",
+    "correlationExtractor" : {
+      "type" : "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+      "regex" : "jsessionid=(.+?)\""
+    },
+    "correlationReplacement" : {
+      "type" : "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+      "regex" : "jsessionid=(.*)"
+    }
+  } ],
+  "dependencies" : [ ],
+  "repositoryId" : "local",
+  "changes" : "Draft"
+}
