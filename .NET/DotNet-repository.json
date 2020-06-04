@@ -1,6 +1,7 @@
 {
-
-  "DotNet" : {
-    "versions" : [ "0.1" ]
-  }
+    "DotNet": {
+        "versions": [
+            "0.1"
+        ]
+    }
 }
