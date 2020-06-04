@@ -1,7 +1,7 @@
 {
-  "id" : "PetStore",
-  "description" : "This correlation rules helps you to correlate Pet Store app. Created by NaveenKumar Namachivayam.",
-  "version" : "0.3-alpha",
+  "id" : "petstore",
+  "description" : "Pet Store rules by NaveenKumar Namachivayam",
+  "version" : "1.0",
   "components" : "",
   "responseFilters" : "",
   "rules" : [ {
