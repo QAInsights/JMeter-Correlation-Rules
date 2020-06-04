@@ -1,7 +1,4 @@
 {
-  "siebel" : {
-    "versions" : [ "1.0" ]
-  },
   "petstore" : {
     "versions" : [ "1.0" ]
   }
