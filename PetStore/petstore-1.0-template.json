@@ -16,6 +16,6 @@
     }
   } ],
   "dependencies" : [ ],
-  "repositoryId" : "local",
+  "repositoryId" : "petstore",
   "changes" : "Draft"
 }
