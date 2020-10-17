@@ -1,8 +1,8 @@
 {
   "id" : "DotNet",
-  "description" : "This correlation rules can be used for .NET apps. Created by NaveenKumar Namachivaya. QAInsights.com",
+  "description" : "",
   "version" : "0.1",
-  "components" : "com.blazemeter.jmeter.correlation.siebel.SiebelRowParamsCorrelationReplacement,com.blazemeter.jmeter.correlation.siebel.SiebelRowIdCorrelationReplacement,com.blazemeter.jmeter.correlation.siebel.SiebelCounterCorrelationReplacement,com.blazemeter.jmeter.correlation.siebel.SiebelRowCorrelationExtractor",
+  "components" : "",
   "responseFilters" : "",
   "rules" : [ {
     "referenceName" : "EVENTARG",
@@ -14,28 +14,7 @@
       "type" : "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
       "regex" : "__EVENTARGUMENT\" value=\"(.*)"
     }
-  }, {
-    "referenceName" : "EVENTTARGET",
-    "correlationExtractor" : {
-      "type" : "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
-      "regex" : "__EVENTTARGET\" value=\"(.*)\""
-    },
-    "correlationReplacement" : {
-      "type" : "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
-      "regex" : "__EVENTTARGET\" value=\"(.*)"
-    }
-  }, {
-    "referenceName" : "VIEWSTATE",
-    "correlationExtractor" : {
-      "type" : "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
-      "regex" : "__VIEWSTATE\" value=\"(.*)"
-    },
-    "correlationReplacement" : {
-      "type" : "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
-      "regex" : "__VIEWSTATE\" value=\"(.*)"
-    }
-  } ],
-  "dependencies" : [ ],
-  "repositoryId" : "DotNet",
-  "changes" : "Draft"
+  }
+  ],
+  "repositoryId" : "DotNet"
 }

@@ -1,5 +1,7 @@
 {
-  "aspnew" : {
-    "versions" : [ "1.0" ]
-  }
+    "aspnew": {
+        "versions": [
+            "1.0"
+        ]
+    }
 }
