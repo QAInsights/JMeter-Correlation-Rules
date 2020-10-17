@@ -1,20 +1,22 @@
 {
-  "id" : "aspnew",
-  "description" : "",
-  "version" : "1.0",
-  "components" : "",
-  "responseFilters" : "",
-  "rules" : [ {
-    "referenceName" : "EVENTARG",
-    "correlationExtractor" : {
-      "type" : "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
-      "regex" : "__EVENTARGUMENT\" value=\"(.*)\""
-    },
-    "correlationReplacement" : {
-      "type" : "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
-      "regex" : "__EVENTARGUMENT\" value=\"(.*)"
-    }
-  }
+  "id": "ASP",
+  "description": "desc",
+  "version": "1.0",
+  "components": "com.blazemeter.jmeter.correlation.siebel.SiebelCounterCorrelationReplacement,\ncom.blazemeter.jmeter.correlation.siebel.SiebelRowCorrelationExtractor,\ncom.blazemeter.jmeter.correlation.siebel.SiebelRowIdCorrelationReplacement,\ncom.blazemeter.jmeter.correlation.siebel.SiebelRowParamsCorrelationReplacement",
+  "responseFilters": "text/html",
+  "rules": [
+      {
+          "referenceName": "FORM_EVENTTARGET",
+          "correlationExtractor": {
+              "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+              "regex": "__EVENTTARGET(.+?)",
+              "matchNr": 1
+          },
+          "correlationReplacement": {
+              "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+              "regex": ""
+          }
+      }
   ],
-  "repositoryId" : "aspnew"
+  "repositoryId": "ASP"
 }
